@@ -1,0 +1,22 @@
+<p>home works!</p>
+
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>POKEMON</th>
+                    <th>IMAGEN</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (pokemon of pokemons; track $index) {
+                <tr>
+                    <td>{{pokemon.id}}</td>
+                    <td>{{pokemon.name}}</td>
+                    <td><img src={{pokemon.sprites.front_default}} alt=""></td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
